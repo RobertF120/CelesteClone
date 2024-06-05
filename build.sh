@@ -1,6 +1,6 @@
 #!/bin/bash
 
 libs=-luser32
-warnings="-Who-writable-strings -Who-format-security"
+warnings=-Wno-writable-strings
 
 clang++ -g src/main.cpp  -oCelesteClone.exe $libs $warnings
